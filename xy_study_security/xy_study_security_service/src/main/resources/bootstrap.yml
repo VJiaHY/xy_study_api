@@ -1,0 +1,18 @@
+server:
+  port: 8066
+  address: 127.0.0.1
+spring:
+  application:
+    name: xy_study_security
+  cloud:
+    nacos:
+      discovery:
+        server-addr: ${spring.cloud.nacos.config.server-addr}
+        namespace: ${spring.cloud.nacos.config.namespace}
+      config:
+        file-extension: yaml
+        server-addr: 59.110.223.73:8848
+        namespace: 4bfebef6-6b96-48f8-ae72-e7c8f04689d2
+        group: DEFAULT_GROUP
+  main:
+    allow-bean-definition-overriding: true

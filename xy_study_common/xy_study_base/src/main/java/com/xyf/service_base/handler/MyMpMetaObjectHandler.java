@@ -6,7 +6,12 @@ import org.springframework.stereotype.Component;
 
 import java.util.Date;
 
-@Component//将组件注入到IOC容器
+
+/**
+ * 添加时间
+ * JiaHY
+ */
+@Component
 public class MyMpMetaObjectHandler implements MetaObjectHandler{
     @Override
     public void insertFill(MetaObject metaObject) {

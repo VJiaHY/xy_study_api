@@ -1,0 +1,53 @@
+server:
+  port: 8844
+  address: 127.0.0.1
+spring:
+  application:
+    name: xy-study-gateway
+  main:
+    allow-bean-definition-overriding: true
+  cloud:
+    nacos:
+      discovery:
+        server-addr: ${spring.cloud.nacos.config.server-addr}
+        namespace: ${spring.cloud.nacos.config.namespace}
+      config:
+        file-extension: yaml
+        server-addr: 59.110.223.73:8848
+        namespace: 4bfebef6-6b96-48f8-ae72-e7c8f04689d2
+        group: DEFAULT_GROUP
+#    inetutils:
+#      ignored-interfaces: ## 忽略网卡
+#        - VMware.*
+#    gateway:
+#      globalcors:
+#        cors‐configurations:
+#          '[/**]': # 匹配所有请求
+#            allowedOrigins: "*" #跨域处理 允许所有的域
+#            allowedMethods: # 支持的方法
+#             ‐ GET
+#             ‐ POST
+#             ‐ PUT
+#             ‐ DELETE
+#      routes:
+#      #功能模块
+#      - id: xy_study_show
+#        uri: http://localhost:8089
+#        predicates:
+#          - Path=/show/**
+#        filters:
+#          - StripPrefix=1
+#        #用户登录模块
+#      - id: xy_study_login
+#        uri: http://localhost:8081
+#        predicates:
+#          - Path=/sys/**
+#        filters:
+#          - StripPrefix=1
+
+#eureka:
+#  instance:
+#    preferIpAddress: true
+#  client:
+#    serviceUrl:
+#      defaultZone: http://${server.address}:8888/eureka/

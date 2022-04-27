@@ -6,9 +6,12 @@ import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 import org.springframework.web.filter.CorsFilter;
 
+/**
+ * 配置跨域
+ * JiaHY
+ */
 @Configuration
 public class CorsConfig {
-
     private CorsConfiguration buildConfig() {
         CorsConfiguration corsConfiguration = new CorsConfiguration();
         //corsConfiguration.addAllowedOrigin("http://10.38.4.181:8020/"); // 允许任何域名使用

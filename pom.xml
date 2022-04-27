@@ -6,9 +6,8 @@
     <modules>
         <module>xy_study_show</module>
         <module>xy_study_common</module>
-        <module>xy_study_login</module>
-        <module>xy_study_eureka</module>
-        <module>xu_study_gateway</module>
+        <module>xy_study_gateway</module>
+        <module>xy_study_security</module>
 
     </modules>
 
@@ -25,19 +24,10 @@
 
     <name>xy_study_api</name>
     <properties>
-
-
     </properties>
 
     <dependencies>
-
-
-
-
-
-
     </dependencies>
-
     <dependencyManagement>
         <dependencies>
         <dependency>
@@ -58,15 +48,5 @@
         </dependencies>
     </dependencyManagement>
 
-
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
 
 </project>

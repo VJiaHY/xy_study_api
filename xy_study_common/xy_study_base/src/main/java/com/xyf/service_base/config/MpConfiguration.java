@@ -6,6 +6,10 @@ import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+/**
+ * MyBatis配置类
+ * JiaHY
+ */
 @Configuration
 @MapperScan(value="com.xyf.*.*.mapper,com.xyf.*.mapper")
 public class MpConfiguration {

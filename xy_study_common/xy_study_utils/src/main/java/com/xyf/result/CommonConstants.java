@@ -6,20 +6,6 @@ package com.xyf.result;
  */
 public interface CommonConstants {
 
-    /**
-     * header 中租户ID
-     */
-    String TENANT_ID = "TENANT-ID";
-
-    /**
-     * header 中版本信息
-     */
-    String VERSION = "VERSION";
-
-    /**
-     * 租户ID
-     */
-    Integer TENANT_ID_1 = 1;
 
     /**
      * 删除
@@ -82,15 +68,6 @@ public interface CommonConstants {
      */
     String UTF8 = "UTF-8";
 
-    /**
-     * 前端工程名
-     */
-    String FRONT_END_PROJECT = "pigx-ui";
-
-    /**
-     * 后端工程名
-     */
-    String BACK_END_PROJECT = "pigx";
 
     /**
      * 公共参数
@@ -141,6 +118,20 @@ public interface CommonConstants {
      * 终端类型：APP
      */
     String APP_CLIENT = "app";
+
+    /**
+     * 黑名单ip
+     */
+    String BLACK_IP = "black_ip";
+    /**
+     * 存储redis 的 token
+     */
+    String REDIS_TOKEN = "token:";
+
+    /**
+     * 存储登录用户
+     */
+    String LOGIN_USER = "login:";
 
     enum DISTRICT_LEVEL {
         QU_CODE("qu_code"), XIANG_CODE("xiang_code"), CUN_CODE("cun_code");

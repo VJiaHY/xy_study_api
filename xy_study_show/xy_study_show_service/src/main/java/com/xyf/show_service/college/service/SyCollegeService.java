@@ -2,7 +2,7 @@ package com.xyf.show_service.college.service;
 
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.xyf.show_pai.domain.SyCollege;
+import com.xyf.show_pai.domain.college.SyCollege;
 
 /**
  * userService接口

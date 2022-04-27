@@ -23,21 +23,6 @@
 
 
 <dependencies>
-    <dependency>
-        <groupId>com.boot</groupId>
-        <artifactId>xy_study_utils</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
-    </dependency>
-    <dependency>
-        <groupId>com.boot</groupId>
-        <artifactId>xy_study_base</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
-    </dependency>
-    <dependency>
-        <groupId>com.boot</groupId>
-        <artifactId>xy_study_shiro</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
-    </dependency>
 
 </dependencies>
 

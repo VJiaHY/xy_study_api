@@ -2,7 +2,7 @@ package com.xyf.show_service.college.mapper;
 
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.xyf.show_pai.domain.SyCollege;
+import com.xyf.show_pai.domain.college.SyCollege;
 import org.apache.ibatis.annotations.Mapper;
 
 

@@ -11,8 +11,8 @@ spring:
         namespace: ${spring.cloud.nacos.config.namespace}
       config:
         file-extension: yaml
-        server-addr: 192.168.141.128:8848
-        namespace: a3b30bdb-4de4-43d8-bacb-c18c5950e4d2
+        server-addr: 59.110.223.73:8848
+        namespace: 4bfebef6-6b96-48f8-ae72-e7c8f04689d2
         group: DEFAULT_GROUP
   main:
     allow-bean-definition-overriding: true
