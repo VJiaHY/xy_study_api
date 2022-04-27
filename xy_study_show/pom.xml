@@ -9,7 +9,6 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <packaging>pom</packaging>
-
     <modules>
         <module>xy_study_show_service</module>
         <module>xy_study_show_api</module>
@@ -17,8 +16,6 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>xy_study_show</artifactId>
-
-
     <name>xy_study_show</name>
 
 
