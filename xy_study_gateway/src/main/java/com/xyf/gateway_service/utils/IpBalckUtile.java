@@ -30,9 +30,7 @@ public class IpBalckUtile {
      * @return JiaHY
      */
     public Boolean checkIp(String ip) {
-        if (ip.contains("/")){
-            ip = ip.replace("/","");
-        }
+
         boolean b = false;
         //先判断当前ip是否存在于黑名单
         boolean balckIpEx = redisUtil.hasKey("balck_ip");

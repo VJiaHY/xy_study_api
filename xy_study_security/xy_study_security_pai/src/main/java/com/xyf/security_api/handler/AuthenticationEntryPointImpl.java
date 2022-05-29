@@ -26,10 +26,10 @@ public class AuthenticationEntryPointImpl implements AuthenticationEntryPoint {
     @Override
     public void commence(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, AuthenticationException e) throws IOException, ServletException {
         R r = new R();
-        r.setCode(HttpStatus.HTTP_FORBIDDEN);
-        r.setMsg("授权失败!");
+        r.setCode(HttpStatus.HTTP_UNAUTHORIZED);
+        r.setMsg("当前用户未授权!");
         String rj = JSONObject.toJSONString(r);
-        httpServletResponse.setStatus(200);
+        httpServletResponse.setStatus(HttpStatus.HTTP_UNAUTHORIZED);
         httpServletResponse.setContentType("application/json");
         httpServletResponse.setCharacterEncoding("utf-8");
         httpServletResponse.getWriter().println(rj);

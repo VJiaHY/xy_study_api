@@ -16,7 +16,6 @@
 
         <module>xy_study_utils</module>
         <module>xy_study_base</module>
-        <module>xy_study_shiro</module>
     </modules>
 
     <properties>

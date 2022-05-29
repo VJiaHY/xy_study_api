@@ -44,9 +44,6 @@ public class UserDetailsServiceImpl implements UserDetailsService {
      */
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        if (StringUtils.isBlank(username)){
-            throw  new RuntimeException("请输入用户名!");
-        }
         //获得用户信息
         SysUser sysUser = sysUserService.getOne(new LambdaQueryWrapper<SysUser>()
                 .eq(SysUser::getUserName, username)

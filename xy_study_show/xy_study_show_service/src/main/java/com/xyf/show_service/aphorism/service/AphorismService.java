@@ -21,4 +21,7 @@ public interface AphorismService extends IService<CelebratedDictum> {
      */
     R aphorismOne();
 
+
+
+
 }

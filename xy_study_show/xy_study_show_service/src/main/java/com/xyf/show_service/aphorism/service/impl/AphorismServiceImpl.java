@@ -58,6 +58,9 @@ public class AphorismServiceImpl extends ServiceImpl<AphorismMapper, CelebratedD
             return R.ok(aphorismOne);
         }
     }
+    private volatile static boolean flag = true;
+
+
 }
 
 

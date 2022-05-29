@@ -19,6 +19,4 @@ public class XyStudyShowServiceApplication {
         System.out.println("启动成功了");
     }
 
-
-
 }

@@ -8,7 +8,6 @@
         <module>xy_study_common</module>
         <module>xy_study_gateway</module>
         <module>xy_study_security</module>
-
     </modules>
 
     <parent>

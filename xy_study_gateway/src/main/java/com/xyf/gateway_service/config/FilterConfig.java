@@ -39,7 +39,14 @@ public class FilterConfig {
             public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {
                 ServerHttpRequest request = exchange.getRequest();
                 InetSocketAddress remoteAddress = request.getRemoteAddress();
-                Boolean isBack = ipBalckUtile().checkIp(String.valueOf(remoteAddress.getAddress()));
+                String ip = String.valueOf(remoteAddress.getAddress());
+                if (ip.contains("/")){
+                    ip = ip.replace("/","");
+                }
+                if (ip.equals("127.0.0.1")){
+                    return chain.filter(exchange);
+                }
+                Boolean isBack = ipBalckUtile().checkIp(ip);
                 ServerHttpResponse response = exchange.getResponse();
                 if(isBack) {
                     return chain.filter(exchange);
