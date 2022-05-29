@@ -122,12 +122,21 @@ public interface CommonConstants {
     /**
      * 黑名单ip
      */
-    String BLACK_IP = "black_ip";
+    String BLACK_IP = "black_ip:";
     /**
      * 存储redis 的 token
      */
     String REDIS_TOKEN = "token:";
 
+    /**
+     * 注册 存储redis 的 邮箱验证码
+     */
+    String REGISTERED_CODE = "registered_code:";
+
+    /**
+     * 忘记密码 存储redis 的 邮箱验证码
+     */
+    String RESET_PASSWORD_CODE = "reset_password_code";
     /**
      * 存储登录用户
      */

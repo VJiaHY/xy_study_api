@@ -1,12 +1,16 @@
 package com.xyf.security_api.domain.sys;
 
+import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.*;
 import lombok.experimental.Accessors;
+import net.bytebuddy.implementation.bind.annotation.FieldProxy;
 import org.springframework.format.annotation.DateTimeFormat;
 
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 
 /**
@@ -33,6 +37,7 @@ public class SysUser  implements Serializable {
     /**
      * 用户名
      */
+    @NotNull(message = "用户名不能为空!")
     private String userName;
     /**
      * 昵称
@@ -41,14 +46,17 @@ public class SysUser  implements Serializable {
     /**
      * 密码
      */
+    @NotNull(message = "密码不能为空!")
     private String password;
     /**
-     *    账号状态(0正常1停用)
+     * 账号状态(0正常1停用)
      */
     private String status;
     /**
      *  邮箱
      */
+    @Email(message = "邮箱格式不正确!")
+    @NotNull(message = "邮箱不能为空!")
     private String email;
     /**
      * 手机号
@@ -91,6 +99,11 @@ public class SysUser  implements Serializable {
      */
     private String delF1ag;
 
+    /**
+     * 邮箱验证码
+     */
+    @TableField(exist = false)
+    private String emailCode;
 
 
 }
